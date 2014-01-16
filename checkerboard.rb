@@ -4,10 +4,10 @@ class Checkerboard
   end
 
   def to_s
-    rows = ['B W', 'W B']
+    rows = [['B', 'W'], ['W', 'B']]
 
     rows.map do |row|
-      row + "\n"
+      row.join(' ') + "\n"
     end.join('')
   end
 
