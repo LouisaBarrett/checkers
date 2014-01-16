@@ -10,7 +10,7 @@ class CheckerboardTest < Minitest::Test
 B W
 W B
 BOARD
-    assert_equal expected, checkerboard.new(2).to_s
+    assert_equal expected, Checkerboard.new(2).to_s
   end
 
 end
