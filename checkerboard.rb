@@ -1,14 +1,15 @@
 class Checkerboard
 
   def initialize(size)
+    @size = size
   end
 
   def to_s
     rows = []
 
-    2.times do |i|
+    @size.times do |i|
     row = []
-      2.times do |j|
+      @size.times do |j|
         if i.even? && j.even? || i.odd? && j.odd?
           row << "B"
         else
