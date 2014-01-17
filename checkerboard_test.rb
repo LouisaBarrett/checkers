@@ -22,4 +22,16 @@ BOARD
     assert_equal expected, Checkerboard.new(3).to_s
   end
 
+  def test_an_even_bigger_board
+    expected = <<-BOARD
+B W B W B W
+W B W B W B
+B W B W B W
+W B W B W B
+B W B W B W
+W B W B W B
+BOARD
+    assert_equal expected, Checkerboard.new(6).to_s
+  end
+
 end
